@@ -1,0 +1,112 @@
+.connect-store {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .connect-store h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .connect-store p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .platform {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .platform:hover {
+    transform: scale(1.05);
+  }
+  
+  .platform.big-square {
+    width: 120px;
+    height: 120px;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  
+  .platform.green {
+    background-color: #00c853;
+  }
+  
+  .platform img {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  
+  .platform .big-icon {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  
+  .platform span {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .connect-store h1 {
+      font-size: 2rem;
+    }
+  
+    .platform-grid {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 10px;
+    }
+  
+    .platform {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .platform.big-square {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .connect-store h1 {
+      font-size: 1.5rem;
+    }
+  
+    .connect-store p {
+      font-size: 0.9rem;
+    }
+  
+    .platform-grid {
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+    }
+  
+    .platform {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .platform.big-square {
+      width: 80px;
+      height: 80px;
+    }
+  }

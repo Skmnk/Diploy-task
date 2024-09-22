@@ -1,0 +1,61 @@
+.Banner{
+    display: flex;
+    align-items: center;
+   padding-top: 10%;
+   padding-bottom: 10%;
+   padding-left: 20%;
+   padding-right: 20%;
+}
+
+.banner-container {
+    background-image: url('../images/talk-to-sales-N2GDBAGC.svg');
+    background-size: cover;
+    background-color: #e2f7e3;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .banner-text {
+    color: #2C5234;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .banner-button button {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .banner-button button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .banner-container {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 15px;
+    }
+  
+    .banner-button {
+      margin-top: 15px;
+    }
+  
+    .banner-text {
+      font-size: 16px;
+    }
+  }
+  

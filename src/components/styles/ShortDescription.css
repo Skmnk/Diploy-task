@@ -1,0 +1,124 @@
+.product-customizer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-showcase {
+    position: relative;
+    background-color: #00c853;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .showcase-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .product-items {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .product-item {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #00c853;
+    cursor: pointer;
+  }
+  
+  .preview-window {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 150px;
+  }
+  
+  .preview-header {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .preview-button {
+    flex: 1;
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .preview-button.active {
+    font-weight: bold;
+    border-bottom: 2px solid #00c853;
+  }
+  
+  .preview-content {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-info {
+    text-align: left;
+  }
+  
+  .info-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  
+  .info-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+  }
+  
+  .info-link {
+    color: #00c853;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .product-customizer {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .product-showcase {
+      flex: 1;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  
+    .product-info {
+      flex: 1;
+    }
+  }

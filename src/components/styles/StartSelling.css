@@ -1,0 +1,97 @@
+.promo-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f3b47;
+    color: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .promo-card-left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .promo-card-left h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .promo-card-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .price-details {
+    background-color: #1a353e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .detail {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .profit-detail {
+    display: flex;
+    justify-content: space-between;
+    color: #18c683;
+    font-weight: bold;
+  }
+  
+  .profit {
+    font-size: 1.2rem;
+  }
+  
+  .start-selling-button {
+    background-color: #18c683;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .start-selling-button:hover {
+    background-color: #16b370;
+  }
+  
+  .footer-text {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+  
+  .promo-card-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .promo-card-right img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .promo-card {
+      flex-direction: column;
+    }
+  
+    .promo-card-left {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .promo-card-right img {
+      max-width: 80%;
+    }
+  }
+  
